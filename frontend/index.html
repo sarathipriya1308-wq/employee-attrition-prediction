@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Employee Attrition Prediction using Machine Learning">
+
+    <title>PeopleSignal | Employee Attrition Intelligence</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">
+                <i class="fa-solid fa-signal"></i>
+            </span>
+
+            <span>
+                <strong>PeopleSignal</strong>
+                <small>ATTRITION INTELLIGENCE</small>
+            </span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home" class="nav-link active">Home</a>
+
+            <a href="#prediction" class="nav-link">
+                Prediction
+            </a>
+
+            <a href="#about" class="nav-link">
+                About
+            </a>
+
+            <a href="#dataset" class="nav-link">
+                Dataset
+            </a>
+
+            <a href="#performance" class="nav-link">
+                Performance
+            </a>
+
+            <a href="#contact" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="theme-button"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+            <a href="#prediction"
+               class="nav-cta">
+
+                Predict Risk
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+        <button class="mobile-menu"
+                id="mobileMenu"
+                aria-label="Open menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     HOME
+========================================================= -->
+
+<section id="home" class="hero section">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span></span>
+                MACHINE LEARNING MINI PROJECT
+            </div>
+
+            <h1>
+                Know who may leave
+                <em>before they do.</em>
+            </h1>
+
+            <p class="hero-description">
+
+                PeopleSignal uses employee data and machine learning
+                to identify attrition risk and turn predictions into
+                practical action.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#prediction"
+                   class="button button-primary">
+
+                    Start Prediction
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+                <a href="#about"
+                   class="button button-secondary">
+
+                    Explore Project
+
+                </a>
+
+            </div>
+
+            <div class="trust-row">
+
+                <span>
+                    <i class="fa-solid fa-lock"></i>
+                    Private by design
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-bolt"></i>
+                    Instant prediction
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-chart-line"></i>
+                    ML powered
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO CARD -->
+
+        <div class="hero-visual">
+
+            <div class="signal-card">
+
+                <div class="signal-top">
+
+                    <div>
+                        <span class="mini-label">
+                            CURRENT SIGNAL
+                        </span>
+
+                        <h3>Attrition Risk</h3>
+                    </div>
+
+                    <span class="live-dot">
+                        <i></i> LIVE
+                    </span>
+
+                </div>
+
+                <div class="score-area">
+
+                    <div class="score-ring">
+
+                        <div class="score-inner">
+
+                            <strong id="heroScore">
+                                82
+                            </strong>
+
+                            <span>%</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="score-text">
+
+                        <span class="risk-badge">
+                            Elevated Risk
+                        </span>
+
+                        <p>
+                            Prediction confidence
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="signal-details">
+
+                    <div>
+                        <span>Overtime</span>
+                        <strong>High</strong>
+                    </div>
+
+                    <div>
+                        <span>Tenure</span>
+                        <strong>2.4 yrs</strong>
+                    </div>
+
+                    <div>
+                        <span>Income</span>
+                        <strong>Stable</strong>
+                    </div>
+
+                </div>
+
+                <div class="signal-footer">
+
+                    <span>
+                        Model confidence
+                    </span>
+
+                    <strong>82%</strong>
+
+                </div>
+
+            </div>
+
+            <div class="floating-card floating-one">
+
+                <span class="float-icon green">
+                    <i class="fa-solid fa-brain"></i>
+                </span>
+
+                <div>
+                    <strong>ML Powered</strong>
+                    <small>Pipeline ready</small>
+                </div>
+
+            </div>
+
+            <div class="floating-card floating-two">
+
+                <span class="float-icon orange">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </span>
+
+                <div>
+                    <strong>Risk detected</strong>
+                    <small>Action recommended</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TECH STACK
+========================================================= -->
+
+<section class="tech-strip">
+
+    <div class="tech-container">
+
+        <span>BUILT WITH</span>
+
+        <div class="tech-items">
+
+            <strong>
+                <i class="fa-brands fa-python"></i>
+                Python
+            </strong>
+
+            <strong>
+                <i class="fa-solid fa-flask"></i>
+                Flask
+            </strong>
+
+            <strong>
+                <i class="fa-solid fa-gears"></i>
+                Scikit-learn
+            </strong>
+
+            <strong>
+                <i class="fa-solid fa-table"></i>
+                Pandas
+            </strong>
+
+            <strong>
+                <i class="fa-solid fa-chart-simple"></i>
+                Chart.js
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FEATURES
+========================================================= -->
+
+<section class="section features-section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                WHY PEOPLE SIGNAL
+            </div>
+
+            <h2>
+                From employee data
+                <span>to a clear signal.</span>
+            </h2>
+
+            <p>
+                A simple prediction experience built around
+                understandable machine learning insights.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+
+                <div class="feature-number">
+                    01
+                </div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <h3>Machine Learning</h3>
+
+                <p>
+                    A trained classification pipeline processes
+                    employee attributes and estimates attrition risk.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card feature-featured">
+
+                <div class="feature-number">
+                    02
+                </div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <h3>Instant Results</h3>
+
+                <p>
+                    Submit employee factors and receive a prediction
+                    with confidence in seconds.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-number">
+                    03
+                </div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <h3>Actionable Insight</h3>
+
+                <p>
+                    The result is paired with a practical recommendation
+                    instead of leaving you with a raw number.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section class="section process-section">
+
+    <div class="section-container">
+
+        <div class="process-layout">
+
+            <div class="process-intro">
+
+                <div class="eyebrow">
+                    HOW IT WORKS
+                </div>
+
+                <h2>
+                    Three steps.
+                    <span>One clear signal.</span>
+                </h2>
+
+                <p>
+                    The application connects your employee information
+                    with a trained machine learning pipeline.
+                </p>
+
+            </div>
+
+
+            <div class="process-list">
+
+                <div class="process-item">
+
+                    <span class="process-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <h3>Predict</h3>
+
+                        <p>
+                            Enter the employee factors used by
+                            the trained model.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <h3>Interpret</h3>
+
+                        <p>
+                            Read the predicted attrition risk
+                            and confidence.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+
+                <div class="process-item">
+
+                    <span class="process-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <h3>Act</h3>
+
+                        <p>
+                            Use the recommendation to decide
+                            the appropriate next step.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-check"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PREDICTION
+========================================================= -->
+
+<section id="prediction"
+         class="section prediction-section">
+
+    <div class="section-container">
+
+        <div class="section-heading centered">
+
+            <div class="eyebrow">
+                PREDICTION CONSOLE
+            </div>
+
+            <h2>
+                Assess an employee's
+                <span>attrition risk.</span>
+            </h2>
+
+            <p>
+                Enter employee information below. The trained ML
+                pipeline will generate a risk prediction.
+            </p>
+
+        </div>
+
+
+        <div class="prediction-layout">
+
+            <!-- FORM -->
+
+            <form id="predictionForm"
+                  class="prediction-form">
+
+                <div class="form-header">
+
+                    <div>
+
+                        <span class="mini-label">
+                            EMPLOYEE ASSESSMENT
+                        </span>
+
+                        <h3>Employee profile</h3>
+
+                    </div>
+
+                    <span class="model-online">
+                        <i></i>
+                        MODEL ONLINE
+                    </span>
+
+                </div>
+
+
+                <!-- SECTION 1 -->
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+
+                        <span>01</span>
+
+                        <div>
+                            <strong>Employee profile</strong>
+                            <small>Basic demographic information</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="Age">Age</label>
+
+                            <input
+                                type="number"
+                                id="Age"
+                                name="Age"
+                                min="18"
+                                max="70"
+                                placeholder="e.g. 32"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="Gender">Gender</label>
+
+                            <select id="Gender"
+                                    name="Gender"
+                                    required>
+
+                                <option value="">
+                                    Select gender
+                                </option>
+
+                                <option value="Male">Male</option>
+
+                                <option value="Female">Female</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="MaritalStatus">
+                                Marital Status
+                            </label>
+
+                            <select id="MaritalStatus"
+                                    name="MaritalStatus"
+                                    required>
+
+                                <option value="">
+                                    Select status
+                                </option>
+
+                                <option value="Single">Single</option>
+
+                                <option value="Married">Married</option>
+
+                                <option value="Divorced">Divorced</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="Education">
+                                Education Level
+                            </label>
+
+                            <select id="Education"
+                                    name="Education"
+                                    required>
+
+                                <option value="">
+                                    Select level
+                                </option>
+
+                                <option value="1">1 — Below College</option>
+                                <option value="2">2 — College</option>
+                                <option value="3">3 — Bachelor</option>
+                                <option value="4">4 — Master</option>
+                                <option value="5">5 — Doctor</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="EducationField">
+                                Education Field
+                            </label>
+
+                            <select id="EducationField"
+                                    name="EducationField"
+                                    required>
+
+                                <option value="">
+                                    Select field
+                                </option>
+
+                                <option value="Life Sciences">
+                                    Life Sciences
+                                </option>
+
+                                <option value="Medical">
+                                    Medical
+                                </option>
+
+                                <option value="Marketing">
+                                    Marketing
+                                </option>
+
+                                <option value="Technical Degree">
+                                    Technical Degree
+                                </option>
+
+                                <option value="Human Resources">
+                                    Human Resources
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="BusinessTravel">
+                                Business Travel
+                            </label>
+
+                            <select id="BusinessTravel"
+                                    name="BusinessTravel"
+                                    required>
+
+                                <option value="">
+                                    Select travel
+                                </option>
+
+                                <option value="Travel_Rarely">
+                                    Travel Rarely
+                                </option>
+
+                                <option value="Travel_Frequently">
+                                    Travel Frequently
+                                </option>
+
+                                <option value="Non-Travel">
+                                    Non-Travel
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECTION 2 -->
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+
+                        <span>02</span>
+
+                        <div>
+                            <strong>Role & work</strong>
+                            <small>Job and workplace factors</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="Department">
+                                Department
+                            </label>
+
+                            <select id="Department"
+                                    name="Department"
+                                    required>
+
+                                <option value="">
+                                    Select department
+                                </option>
+
+                                <option value="Sales">
+                                    Sales
+                                </option>
+
+                                <option value="Research & Development">
+                                    Research & Development
+                                </option>
+
+                                <option value="Human Resources">
+                                    Human Resources
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="JobRole">
+                                Job Role
+                            </label>
+
+                            <select id="JobRole"
+                                    name="JobRole"
+                                    required>
+
+                                <option value="">
+                                    Select role
+                                </option>
+
+                                <option value="Sales Executive">
+                                    Sales Executive
+                                </option>
+
+                                <option value="Sales Representative">
+                                    Sales Representative
+                                </option>
+
+                                <option value="Research Scientist">
+                                    Research Scientist
+                                </option>
+
+                                <option value="Laboratory Technician">
+                                    Laboratory Technician
+                                </option>
+
+                                <option value="Healthcare Representative">
+                                    Healthcare Representative
+                                </option>
+
+                                <option value="Manager">
+                                    Manager
+                                </option>
+
+                                <option value="Human Resources">
+                                    Human Resources
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="JobLevel">
+                                Job Level
+                            </label>
+
+                            <input
+                                type="number"
+                                id="JobLevel"
+                                name="JobLevel"
+                                min="1"
+                                max="5"
+                                placeholder="1 - 5"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="OverTime">
+                                Overtime
+                            </label>
+
+                            <select id="OverTime"
+                                    name="OverTime"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="Yes">Yes</option>
+
+                                <option value="No">No</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="DailyRate">
+                                Daily Rate
+                            </label>
+
+                            <input
+                                type="number"
+                                id="DailyRate"
+                                name="DailyRate"
+                                placeholder="e.g. 800"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="DistanceFromHome">
+                                Distance From Home
+                            </label>
+
+                            <input
+                                type="number"
+                                id="DistanceFromHome"
+                                name="DistanceFromHome"
+                                min="0"
+                                placeholder="e.g. 10"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECTION 3 -->
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+
+                        <span>03</span>
+
+                        <div>
+                            <strong>Career & satisfaction</strong>
+                            <small>Experience and employee engagement</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="MonthlyIncome">
+                                Monthly Income
+                            </label>
+
+                            <input
+                                type="number"
+                                id="MonthlyIncome"
+                                name="MonthlyIncome"
+                                placeholder="e.g. 5000"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="TotalWorkingYears">
+                                Total Working Years
+                            </label>
+
+                            <input
+                                type="number"
+                                id="TotalWorkingYears"
+                                name="TotalWorkingYears"
+                                min="0"
+                                placeholder="e.g. 8"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="YearsAtCompany">
+                                Years At Company
+                            </label>
+
+                            <input
+                                type="number"
+                                id="YearsAtCompany"
+                                name="YearsAtCompany"
+                                min="0"
+                                placeholder="e.g. 4"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="YearsInCurrentRole">
+                                Years In Current Role
+                            </label>
+
+                            <input
+                                type="number"
+                                id="YearsInCurrentRole"
+                                name="YearsInCurrentRole"
+                                min="0"
+                                placeholder="e.g. 2"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="YearsSinceLastPromotion">
+                                Years Since Promotion
+                            </label>
+
+                            <input
+                                type="number"
+                                id="YearsSinceLastPromotion"
+                                name="YearsSinceLastPromotion"
+                                min="0"
+                                placeholder="e.g. 1"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="YearsWithCurrManager">
+                                Years With Manager
+                            </label>
+
+                            <input
+                                type="number"
+                                id="YearsWithCurrManager"
+                                name="YearsWithCurrManager"
+                                min="0"
+                                placeholder="e.g. 2"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="NumCompaniesWorked">
+                                Companies Worked
+                            </label>
+
+                            <input
+                                type="number"
+                                id="NumCompaniesWorked"
+                                name="NumCompaniesWorked"
+                                min="0"
+                                placeholder="e.g. 3"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="TrainingTimesLastYear">
+                                Training Last Year
+                            </label>
+
+                            <input
+                                type="number"
+                                id="TrainingTimesLastYear"
+                                name="TrainingTimesLastYear"
+                                min="0"
+                                placeholder="e.g. 3"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="PercentSalaryHike">
+                                Salary Hike %
+                            </label>
+
+                            <input
+                                type="number"
+                                id="PercentSalaryHike"
+                                name="PercentSalaryHike"
+                                min="0"
+                                placeholder="e.g. 15"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECTION 4 -->
+
+                <div class="form-section">
+
+                    <div class="form-section-title">
+
+                        <span>04</span>
+
+                        <div>
+                            <strong>Workplace signals</strong>
+                            <small>
+                                Satisfaction and relationship indicators
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="EnvironmentSatisfaction">
+                                Environment Satisfaction
+                            </label>
+
+                            <select id="EnvironmentSatisfaction"
+                                    name="EnvironmentSatisfaction"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="1">1 — Low</option>
+                                <option value="2">2 — Medium</option>
+                                <option value="3">3 — High</option>
+                                <option value="4">4 — Very High</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="JobInvolvement">
+                                Job Involvement
+                            </label>
+
+                            <select id="JobInvolvement"
+                                    name="JobInvolvement"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="JobSatisfaction">
+                                Job Satisfaction
+                            </label>
+
+                            <select id="JobSatisfaction"
+                                    name="JobSatisfaction"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="1">1 — Low</option>
+                                <option value="2">2 — Medium</option>
+                                <option value="3">3 — High</option>
+                                <option value="4">4 — Very High</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="RelationshipSatisfaction">
+                                Relationship Satisfaction
+                            </label>
+
+                            <select id="RelationshipSatisfaction"
+                                    name="RelationshipSatisfaction"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="WorkLifeBalance">
+                                Work Life Balance
+                            </label>
+
+                            <select id="WorkLifeBalance"
+                                    name="WorkLifeBalance"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="PerformanceRating">
+                                Performance Rating
+                            </label>
+
+                            <select id="PerformanceRating"
+                                    name="PerformanceRating"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="StockOptionLevel">
+                                Stock Option Level
+                            </label>
+
+                            <select id="StockOptionLevel"
+                                    name="StockOptionLevel"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button type="button"
+                            id="resetButton"
+                            class="button button-secondary">
+
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Reset
+
+                    </button>
+
+
+                    <button type="submit"
+                            id="predictButton"
+                            class="button button-primary">
+
+                        <span id="predictText">
+                            Predict Attrition
+                        </span>
+
+                        <span id="predictLoader"
+                              class="button-loader hidden">
+
+                            <i class="fa-solid fa-spinner fa-spin"></i>
+                            Analysing...
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <!-- RESULT -->
+
+            <aside class="result-panel"
+                   id="resultPanel">
+
+                <div class="result-empty"
+                     id="resultEmpty">
+
+                    <div class="empty-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                    <h3>Prediction result</h3>
+
+                    <p>
+                        Complete the assessment form and your
+                        machine learning result will appear here.
+                    </p>
+
+                </div>
+
+
+                <div class="result-content hidden"
+                     id="resultContent">
+
+                    <div class="result-header">
+
+                        <span class="mini-label">
+                            PREDICTION RESULT
+                        </span>
+
+                        <span class="result-status"
+                              id="resultStatus">
+                            COMPLETE
+                        </span>
+
+                    </div>
+
+
+                    <div class="result-score">
+
+                        <div class="result-circle"
+                             id="resultCircle">
+
+                            <strong id="resultConfidence">
+                                0
+                            </strong>
+
+                            <span>%</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="result-risk"
+                         id="resultRisk">
+
+                        Low Risk
+
+                    </div>
+
+
+                    <p class="result-description"
+                       id="resultDescription">
+
+                        Current employee factors indicate
+                        relatively low attrition risk.
+
+                    </p>
+
+
+                    <div class="recommendation">
+
+                        <div class="recommendation-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <div>
+
+                            <span>RECOMMENDATION</span>
+
+                            <p id="recommendationText">
+                                Continue regular engagement.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="button button-secondary result-reset"
+                            id="resultReset">
+
+                        <i class="fa-solid fa-rotate-left"></i>
+                        New Prediction
+
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about"
+         class="section about-section">
+
+    <div class="section-container">
+
+        <div class="about-layout">
+
+            <div class="about-copy">
+
+                <div class="eyebrow">
+                    ABOUT THE PROJECT
+                </div>
+
+                <h2>
+                    A practical ML project built around
+                    <span>a real business problem.</span>
+                </h2>
+
+                <p>
+                    Employee attrition is a common challenge for
+                    organizations. PeopleSignal demonstrates how
+                    machine learning can transform employee-level
+                    information into an understandable attrition
+                    risk signal.
+                </p>
+
+                <p>
+                    The application uses a Python machine learning
+                    pipeline served through Flask and connected to
+                    a responsive browser interface.
+                </p>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <div class="about-card-top">
+
+                    <span class="mini-label">
+                        SYSTEM ARCHITECTURE
+                    </span>
+
+                    <i class="fa-solid fa-diagram-project"></i>
+
+                </div>
+
+
+                <div class="architecture">
+
+                    <div class="architecture-node">
+
+                        <i class="fa-solid fa-file-csv"></i>
+
+                        <span>Dataset</span>
+
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+
+                        <i class="fa-solid fa-gears"></i>
+
+                        <span>ML Pipeline</span>
+
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+
+                        <i class="fa-solid fa-server"></i>
+
+                        <span>Flask API</span>
+
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+
+                        <i class="fa-solid fa-display"></i>
+
+                        <span>Web UI</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DATASET
+========================================================= -->
+
+<section id="dataset"
+         class="section dataset-section">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                DATASET
+            </div>
+
+            <h2>
+                The data behind
+                <span>the prediction.</span>
+            </h2>
+
+            <p>
+                Employee attributes used to train and evaluate
+                the attrition classification pipeline.
+            </p>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <span>RECORDS</span>
+
+                <strong id="recordCount">
+                    —
+                </strong>
+
+                <small>
+                    Employee observations
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>FEATURES</span>
+
+                <strong id="featureCount">
+                    —
+                </strong>
+
+                <small>
+                    Available attributes
+                </small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>MISSING VALUES</span>
+
+                <strong id="missingCount">
+                    —
+                </strong>
+
+                <small>
+                    Dataset completeness
+                </small>
+
+            </div>
+
+
+            <div class="stat-card accent">
+
+                <span>TARGET</span>
+
+                <strong>
+                    Attrition
+                </strong>
+
+                <small>
+                    Prediction variable
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="dataset-table-card">
+
+            <div class="table-header">
+
+                <div>
+
+                    <span class="mini-label">
+                        SAMPLE DATA
+                    </span>
+
+                    <h3>Employee records</h3>
+
+                </div>
+
+                <span class="table-note">
+                    First 5 records
+                </span>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead id="datasetHead">
+                    </thead>
+
+                    <tbody id="datasetBody">
+
+                        <tr>
+
+                            <td colspan="6"
+                                class="table-loading">
+
+                                <i class="fa-solid fa-spinner fa-spin"></i>
+                                Loading dataset...
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PERFORMANCE
+========================================================= -->
+
+<section id="performance"
+         class="section performance-section">
+
+    <div class="section-container">
+
+        <div class="section-heading centered">
+
+            <div class="eyebrow">
+                MODEL PERFORMANCE
+            </div>
+
+            <h2>
+                How the model
+                <span>performs.</span>
+            </h2>
+
+            <p>
+                Evaluation metrics from the current training run.
+            </p>
+
+        </div>
+
+
+        <div class="metric-grid">
+
+            <div class="metric-card">
+
+                <span>ACCURACY</span>
+
+                <strong>100%</strong>
+
+                <div class="metric-bar">
+                    <i style="width:100%"></i>
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>PRECISION</span>
+
+                <strong>100%</strong>
+
+                <div class="metric-bar">
+                    <i style="width:100%"></i>
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>RECALL</span>
+
+                <strong>100%</strong>
+
+                <div class="metric-bar">
+                    <i style="width:100%"></i>
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>F1 SCORE</span>
+
+                <strong>100%</strong>
+
+                <div class="metric-bar">
+                    <i style="width:100%"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="performance-note">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <p>
+                These scores come from the current 20-record sample
+                dataset and should not be treated as production-level
+                model validation.
+            </p>
+
+        </div>
+
+
+        <div class="charts-grid">
+
+            <div class="chart-card">
+
+                <div class="chart-header">
+
+                    <div>
+                        <span class="mini-label">
+                            MODEL METRICS
+                        </span>
+
+                        <h3>Performance overview</h3>
+                    </div>
+
+                </div>
+
+                <div class="chart-box">
+
+                    <canvas id="metricsChart"></canvas>
+
+                </div>
+
+            </div>
+
+
+            <div class="chart-card">
+
+                <div class="chart-header">
+
+                    <div>
+                        <span class="mini-label">
+                            RISK DISTRIBUTION
+                        </span>
+
+                        <h3>Prediction classes</h3>
+                    </div>
+
+                </div>
+
+                <div class="chart-box doughnut-box">
+
+                    <canvas id="riskChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact"
+         class="section contact-section">
+
+    <div class="section-container">
+
+        <div class="contact-card">
+
+            <div>
+
+                <div class="eyebrow">
+                    CONTACT
+                </div>
+
+                <h2>
+                    Have a question
+                    <span>about the project?</span>
+                </h2>
+
+                <p>
+                    This mini project demonstrates an end-to-end
+                    machine learning application from dataset to
+                    browser-based prediction.
+                </p>
+
+            </div>
+
+
+            <div class="contact-details">
+
+                <div class="contact-row">
+
+                    <span>
+                        <i class="fa-solid fa-layer-group"></i>
+                    </span>
+
+                    <div>
+                        <small>PROJECT</small>
+                        <strong>Employee Attrition Prediction</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-row">
+
+                    <span>
+                        <i class="fa-solid fa-code"></i>
+                    </span>
+
+                    <div>
+                        <small>STACK</small>
+                        <strong>Python · Flask · Scikit-learn</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <span class="logo-mark">
+                    <i class="fa-solid fa-signal"></i>
+                </span>
+
+                <span>
+                    <strong>PeopleSignal</strong>
+                    <small>EMPLOYEE ATTRITION INTELLIGENCE</small>
+                </span>
+
+            </div>
+
+            <p>
+                Machine Learning Mini Project
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 PeopleSignal
+            </span>
+
+            <span>
+                Built with Python & Machine Learning
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div class="toast"
+     id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Success
+    </span>
+
+</div>
+
+
+<!-- =========================================================
+     SCROLL TOP
+========================================================= -->
+
+<button id="scrollTop"
+        class="scroll-top"
+        aria-label="Scroll to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Main JS -->
+<script src="/script.js"></script>
+
+</body>
+</html>
